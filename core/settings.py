@@ -12,7 +12,7 @@ CONFIG.read('config.ini')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+SECRET_FOLDER = os.path.normpath(os.path.join(BASE_DIR, 'secret'))
 SECRET_FILE = os.path.normpath(os.path.join(BASE_DIR, 'secret/SECRET.key'))
 
 try:
