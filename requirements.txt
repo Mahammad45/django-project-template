@@ -1,0 +1,12 @@
+asgiref
+Django
+django-jazzmin
+djangorestframework
+drf-yasg
+inflection
+packaging
+pillow
+pytz
+PyYAML
+sqlparse
+uritemplate
