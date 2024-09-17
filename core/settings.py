@@ -38,11 +38,9 @@ ALLOWED_HOSTS = ["*"]
 
 
 INSTALLED_APPS = [
-    'jazzmin',
-
     'rest_framework',
     # 'rest_framework.authtoken',
-    
+
     'drf_yasg',
 
 ] + DEFAULT_INSTALLED_APPS
