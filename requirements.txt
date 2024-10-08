@@ -1,6 +1,5 @@
 asgiref
 Django
-django-jazzmin
 djangorestframework
 drf-yasg
 inflection
@@ -10,3 +9,6 @@ pytz
 PyYAML
 sqlparse
 uritemplate
+django-import-export
+rest_framework_simplejwt
+djoser

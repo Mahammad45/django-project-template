@@ -17,7 +17,7 @@ SECRET_FILE = os.path.normpath(os.path.join(BASE_DIR, 'secret/SECRET.key'))
 
 try:
     SECRET_KEY = open(SECRET_FILE).read().strip()
-    
+
 
 except IOError:
     try:
@@ -50,6 +50,22 @@ MIDDLEWARE = [
 
 ] + DEFAULT_MIDDLEWARE
 
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
 
 ROOT_URLCONF = 'core.urls'
 
